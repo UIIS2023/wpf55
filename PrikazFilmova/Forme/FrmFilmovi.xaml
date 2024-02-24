@@ -1,0 +1,23 @@
+﻿<Window x:Class="PrikazFilmova.Forme.FrmFilmovi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrikazFilmova.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni film" Height="296" Width="242">
+    <Grid Height="286" VerticalAlignment="Top">
+        <Label Content="Naslov:" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Žanr:" HorizontalAlignment="Left" Margin="20,58,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="20,236,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.798,4.678" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="165,236,0,0" VerticalAlignment="Top" Width="52" Click="btnOtkazi_Click"/>
+        <Label Content="Glumci:" HorizontalAlignment="Left" Margin="20,98,0,0" VerticalAlignment="Top"/>
+        <Label Content="Režiser:" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Trajanje:" HorizontalAlignment="Left" Margin="20,181,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNaslov" HorizontalAlignment="Left" Margin="82,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="33"/>
+        <TextBox x:Name="txtTrajanje" HorizontalAlignment="Left" Margin="82,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbZanr" HorizontalAlignment="Left" Margin="82,62,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NazivŽanrova" SelectedValuePath="ŽanrID"/>
+        <ComboBox x:Name="cbGlumci" HorizontalAlignment="Left" Margin="82,102,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="ImeGlumca" SelectedValuePath="GlumacID"/>
+        <ComboBox x:Name="cbReziser" HorizontalAlignment="Left" Margin="82,144,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="ImeRezisera" SelectedValuePath="ReziserID"/>
+    </Grid>
+</Window>

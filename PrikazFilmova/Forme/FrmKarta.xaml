@@ -1,0 +1,26 @@
+﻿<Window x:Class="PrikazFilmova.Forme.FrmKarta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrikazFilmova.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni kartu" Height="300" Width="300">
+    <Grid>
+        <Label Content="Film:" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Broj karata:" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sala:" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sedište:" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Datum:" HorizontalAlignment="Left" Margin="30,171,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cena:" HorizontalAlignment="Left" Margin="30,142,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBrojKarata" HorizontalAlignment="Left" Margin="115,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSala" HorizontalAlignment="Left" Margin="115,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSedište" HorizontalAlignment="Left" Margin="115,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCena" HorizontalAlignment="Left" Margin="115,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="34,242,0,0" VerticalAlignment="Top" Width="59" Click="btnSacuvaj_Click"  />
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="212,242,0,0" VerticalAlignment="Top" Width="48" Click="btnOtkazi_Click"/>
+        <DatePicker Name="Datum" HorizontalAlignment="Left" Margin="115,172,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbxFilm" HorizontalAlignment="Left" Margin="115,22,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Naslov" SelectedValuePath="FilmID"/>
+
+    </Grid>
+</Window>
